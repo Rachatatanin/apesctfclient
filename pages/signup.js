@@ -33,16 +33,15 @@ function Index() {
         const response = await axios.post("https://apesctfapi.azurewebsites.net/api/user", values);
         
         if (response.data.status === 200) {
-          // Show a success message with the API message
           Swal.fire({
             title: "Success!",
             text: response.data.message, // Use the message from the API
             icon: "success",
             confirmButtonText: "OK",
-          });
-  
-          // Redirect to the login page or perform any other actions
-          window.location.href = "/login";
+            timer: 3000,
+          },
+          window.location.href = "https://mean1611.github.io/apesctfclient_lnwza/login");
+          
         } else {
           // Show an error message with the API message
           Swal.fire({
@@ -78,7 +77,7 @@ function Index() {
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body grid place-items-center">
               <img
-                src="/images/smiley.png"
+                src="https://mean1611.github.io/apesctfclient_lnwza/images/smiley.png"
                 style={{ width: "100px", height: "100px" }}
                 alt="Smiley Face"
                 flex

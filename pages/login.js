@@ -9,7 +9,7 @@ function Login() {
   useEffect(() => {
     const userdata = localStorage.getItem("user");
     if (userdata) {
-      window.location.href = "/profile";
+      window.location.href = "https://mean1611.github.io/apesctfclient_lnwza/profile";
     }
   }, []);
 
@@ -31,11 +31,12 @@ function Login() {
       if (response.status === 200) {
         const user = await response.json();
         localStorage.setItem("user", JSON.stringify(user.data));
-        window.location.href = "/profile";
         swal.fire({
           icon: 'success',
           title: 'Login successful',
-        });
+          timer: 3000,
+        },
+        window.location.href = "https://mean1611.github.io/apesctfclient_lnwza/profile");
       } else if (response.status === 401) {
         swal.fire({
           icon: 'error',
@@ -73,7 +74,7 @@ function Login() {
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body grid place-items-center">
               <img
-                src="/images/smiley.png"
+                src="https://mean1611.github.io/apesctfclient_lnwza/images/smiley.png"
                 style={{ width: "100px", height: "100px" }}
                 alt="Smiley Face"
                 flex
