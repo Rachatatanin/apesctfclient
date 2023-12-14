@@ -11,7 +11,7 @@
   
   
 .banner {
-  background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/galaxy.png"); 
+  background-image: url("/images/galaxy.png"); 
   background-size: 100% 100%; 
   background-repeat: no-repeat; 
   margin-top: 3% ;
@@ -253,7 +253,7 @@
 }
 
 .hero {
-  background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/fadecolourwall.jpg");
+  background-image: url("/images/fadecolourwall.jpg");
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -297,7 +297,7 @@
 
 
 .banner-learn {
-  background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/Matrix.jpg");
+  background-image: url("/images/Matrix.jpg");
   background-color: rgb(143, 142, 155);
   background-size: 100% 100% ; 
   background-repeat: no-repeat; 
@@ -340,7 +340,7 @@
 }
 
 .menu-learn div {
-  margin-left: 20%;
+  margin-left: 50%;
 }
 
 .learn-content{
@@ -410,7 +410,7 @@
 }
 
 .banner-practice {
-  background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/Matrix.jpg");
+  background-image: url("/images/Matrix.jpg");
   background-color: rgb(143, 142, 155);
   background-size: 100% 100%; 
   background-repeat: no-repeat; 
@@ -444,16 +444,11 @@
 
 }
 
-.report-detail{
-  width: 500px;
-  height: 500px;
-}
-
 .report-component{
   font-family: 'Goldman', cursive;
   margin-top: 3%;
   width: 100%;
-  height: auto;
+  height: 900px;
 }
 
 
@@ -490,7 +485,7 @@
 }
 
 .practice-body a{
-    background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/category_image.png");
+    background-image: url("/images/category_image.png");
     background-size: 100% 100%; 
     background-repeat: no-repeat; 
     display: flex;
@@ -571,7 +566,7 @@
 }
 
 .card-question{
-  background-image: url("https://mean1611.github.io/apesctfclient_lnwza/images/category_image.png");
+  background-image: url("/images/category_image.png");
   background-size: 100% 100%; 
   width: 375px;
   height: 330px;
@@ -593,6 +588,3 @@
 
 
 
-.show-data{
-  height: 600px;
-}

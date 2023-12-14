@@ -18,8 +18,8 @@ function Usermangecom() {
     getUser();
   }, []);
 
-  const handleClearFields = () => {
-    setSelectedUser(null);
+  const handleClickAdd = () => {
+    // TODO: Add new user
   };
 
   const handleClickEdit = (user) => {
@@ -113,7 +113,7 @@ function Usermangecom() {
       <div className="reporttop card bg-primary flex justify-center">
         <h2 className="text-base-100">USER</h2>
       </div>
-      <div className="overflow-x-auto show-data">
+      <div className="overflow-x-auto">
         <table className="table table-zebra">
           {/* head */}
           <thead>
@@ -168,21 +168,20 @@ function Usermangecom() {
             <label className="label">
               <span className="label-text">Username</span>
             </label>
-            <input type="text" placeholder="Username" className="input input-bordered w-full max-w-xs" name="username" value={selectedUser?.username || ""} onChange={handleInputChange} readOnly/>
+            <input type="text" placeholder="Username" className="input input-bordered w-full max-w-xs" name="username" value={selectedUser?.username || ""} onChange={handleInputChange} />
             </div>
 
             <div className="ml-5">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input type="text" placeholder="Password" className="input input-bordered w-full max-w-xs" name="password" value={selectedUser?.password || ""} onChange={handleInputChange} readOnly/>
+            <input type="text" placeholder="Password" className="input input-bordered w-full max-w-xs" name="password" value={selectedUser?.password || ""} onChange={handleInputChange} />
             </div>
           
           </form>
         <div className="flex items-center grid grid-cols-3 row-start-2 col-start-2 col-span-3 mt-5 mb-2 gap-4">
-           <button className="btn btn-error w-40 place-self-end" onClick={handleClickDelete}>DELETE</button>
-           <button className="btn w-40 "  onClick={handleClearFields}>CLEAR</button>
-         
+          <button className="btn btn-success" type="submit" onClick={handleSubmit}>SAVE</button>
+          <button className="btn btn-error" onClick={handleClickDelete}>DELETE</button>
         </div>
       </div>
       

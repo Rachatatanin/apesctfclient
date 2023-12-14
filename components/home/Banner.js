@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div className="banner">
       <img
-        src="https://mean1611.github.io/apesctfclient_lnwza/images/hacker.png" // เปลี่ยนเป็นที่อยู่ของรูปภาพของคุณ
+        src="/images/hacker.png" // เปลี่ยนเป็นที่อยู่ของรูปภาพของคุณ
         alt="Banner Image"
         className="banner-image"
       />
